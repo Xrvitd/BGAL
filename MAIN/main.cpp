@@ -1449,7 +1449,7 @@ void CVTBasedNewtonTest()
 	boundary.insert_(BGAL::_Point2(0, 1));
 	boundary.end_();
 	std::vector<BGAL::_Point2> sites;
-	int num = 100;
+	int num = 1000;
 	for (int i = 0; i < num; ++i)
 	{
 		sites.push_back(BGAL::_Point2(BGAL::_BOC::rand_(), BGAL::_BOC::rand_()));
@@ -4371,10 +4371,14 @@ int alltest()
 int main()
 {
 
-	//CVTBasedNewtonTest();
-	//return 0;
+	CVTBasedNewtonTest();
+	return 0;
 
 	
+
+
+
+
 
 	std::cout << "====================DenoiseTest" << std::endl;
 	string model = "00018";
@@ -4393,8 +4397,8 @@ int main()
 
 	//DenoiseTest(model);
 	//RFEPSTest(model);
-	Comput_rnn(model);
-	Comput_RPD(model);
+	//Comput_rnn(model);
+	//Comput_RPD(model);
 	
 
 //
